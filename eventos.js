@@ -1,4 +1,5 @@
-let classificar = '?orderBy=nome'
+let classificar = '?orderBy=nome' // Classifica por ordem alfabetica
+
 fetch('https://servicodados.ibge.gov.br/api/v1/localidades/regioes'+classificar)
     .then( (resposta) => resposta.json())
     .then( (regioes) => {
